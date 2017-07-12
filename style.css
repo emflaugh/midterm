@@ -1,0 +1,22 @@
+.jumbotron {
+  background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6513421.jpg');
+  color: white;
+  text-align: center;
+  background-position: 0% 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+body {
+  background-color: black;
+}
+
+.row {
+  border: 3px solid white;
+  background-color: white;
+}
+
+.col-sm-2 {
+  text-align: center;
+}
