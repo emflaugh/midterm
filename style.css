@@ -62,3 +62,32 @@ h4 {
   border-radius: 10px;
   padding: 10px;
 }
+
+.wrapper {
+  position: relative
+}
+.seat {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.available {
+  z-index: 100;
+  position: absolute;
+}
+.seat.is-active {
+  z-index: 1000;
+}
+.selected {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.reserved {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

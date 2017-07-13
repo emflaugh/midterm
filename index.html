@@ -8,7 +8,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Elyse Copy of Midterm</title>
+    <title>Grand Circus Theatre</title>
   </head>
   <body>
 
@@ -26,112 +26,136 @@
 
 
 <!--Rows of Seats using Bootstrap Grid System-->
-<div class="container">
+<div class="container ">
     <div class="row">
-      <img src="screen.png" class="screen" style="width:100%" alt="Image">
-    <div id="a1" class="col-xs-2">
-      <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
+      <img src="images/screen.png" class="screen" style="width:100%" alt="Image">
+    <div class="wrapper">
+    <div id="a1" class="col-xs-2 seat">
+      <div class="available">
+        <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
+      </div>
       <p>Seat A1</p>
     </div>
-    <div id="a2" class="col-xs-2">
+    <div id="aa1" class="col-xs-2 seat">
+      <div class="selected">
+        <img src="images/selectseat.png" class="open-seat" style="width:100%" alt="Image">
+      </div>
+      <p>Seat A1</p>
+    </div>
+    <div id="aaa1" class="col-xs-2 seat">
+      <div class="reserved">
+        <img src="images/takenseat.png" class="open-seat" style="width:100%" alt="Image">
+      </div>
+      <p>Seat A1</p>
+    </div>
+  </div>
+
+
+
+
+
+<!--
+
+
+    <div id="a2" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat A2</p>
     </div>
-    <div id="a3" class="col-xs-2">
+    <div id="a3" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat A3</p>
     </div>
-    <div id="a4" class="col-xs-2">
+    <div id="a4" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat A4</p>
     </div>
-    <div id="a5" class="col-xs-2">
+    <div id="a5" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat A5</p>
     </div>
-    <div id="a6" class="col-xs-2">
+    <div id="a6" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat A6</p>
     </div>
   </div>
   <div class="row">
-  <div id="b1" class="col-xs-2">
+  <div id="b1" class="col-xs-2 available">
     <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
     <p>Seat B1</p>
   </div>
-  <div id="b2" class="col-xs-2">
+  <div id="b2" class="col-xs-2 available">
     <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
     <p>Seat B2</p>
   </div>
-  <div id="b3" class="col-xs-2">
+  <div id="b3" class="col-xs-2 available">
     <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
     <p>Seat B3</p>
   </div>
-  <div id="b4" class="col-xs-2">
+  <div id="b4" class="col-xs-2 available">
     <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
     <p>Seat B4</p>
   </div>
-  <div id="b5" class="col-xs-2">
+  <div id="b5" class="col-xs-2 available">
     <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
     <p>Seat B5</p>
   </div>
-  <div id="b6" class="col-xs-2">
+  <div id="b6" class="col-xs-2 available">
     <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
     <p>Seat B6</p>
   </div>
 </div>
 <div class="row">
-    <div id="c1" class="col-xs-2">
+    <div id="c1" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat C1</p>
     </div>
-    <div id="c2" class="col-xs-2">
+    <div id="c2" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat C2</p>
     </div>
-    <div id="c3" class="col-xs-2">
+    <div id="c3" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat C3</p>
     </div>
-    <div id="c4" class="col-xs-2">
+    <div id="c4" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat C4</p>
     </div>
-    <div id="c5" class="col-xs-2">
+    <div id="c5" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat C5</p>
     </div>
-    <div id="c6" class="col-xs-2">
+    <div id="c6" class="col-xs-2 available">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat C6</p>
     </div>
   </div>
   <div class="row">
-      <div id="d1" class="col-xs-2">
+      <div id="d1" class="col-xs-2 available">
         <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
         <p>Seat D1</p>
       </div>
-      <div id="d2" class="col-xs-2">
+      <div id="d2" class="col-xs-2 available">
         <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
         <p>Seat D2</p>
       </div>
-      <div id="d3" class="col-xs-2">
+      <div id="d3" class="col-xs-2 available">
         <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
         <p>Seat D3</p>
       </div>
-      <div id="d4" class="col-xs-2">
+      <div id="d4" class="col-xs-2 available">
         <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
         <p>Seat D4</p>
       </div>
-      <div id="d5" class="col-xs-2">
+      <div id="d5" class="col-xs-2 available">
         <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
         <p>Seat D5</p>
       </div>
-      <div id="d6" class="col-xs-2">
+      <div id="d6" class="col-xs-2 available">
         <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
         <p>Seat D6</p>
       </div>
-    </div>
+    </div> -->
 
 
 <!--Seat Guide Section, using bootstrap thumbnails -->
