@@ -28,7 +28,7 @@
 <!--Rows of Seats using Bootstrap Grid System-->
 <div class="container">
     <div class="row">
-      <img src="screen.png" class="screen" style="width:100%" alt="Image">
+      <img src="images/screen.png" class="screen" style="width:100%" alt="Image">
     <div id="a1" class="col-xs-2">
       <img src="images/openseat.png" class="open-seat" style="width:100%" alt="Image">
       <p>Seat A1</p>
@@ -168,9 +168,9 @@
 
 <!-- hidden form -->
 
-<div class="form-container">
+<!-- <div class="form-container">
     <!-- slide up and down panel div -->
-    <div class="panel">
+    <!-- <div class="panel">
     <h2>Reserve Your Seat</h2>
     <form type="hidden">
     	<div class="form-group">
@@ -191,12 +191,23 @@
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
-  </div>
+  </div> -->
+<!-- </div>
+<p class="slide"><div class="pull-me">Slide Up/Down</div></p> -->
 
-</div>
-<p class="slide"><div class="pull-me">Slide Up/Down</div></p>
-
-
+<!-- This is our form -->
+<form action="" method="post">
+  <fieldset>
+    <legend>Reserve your seat:</legend>
+    <label class = "name">Name:
+    <input type: ="text" name="name" /></label>
+    <label class = "phone_number">Phone Number:
+    <input type: ="text" name="phone" /></label>
+    <label class = "email">Email:
+    <input type: ="text" name="email" /></label>
+    <input type="submit" name="submit" value="Reserve" />
+  </fieldset>
+</form>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
