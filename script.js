@@ -3,7 +3,7 @@ console.log('hi');
 
 //select a seat, on click change to the green colored seat
   $('img').click(function(){
-      $(this).attr('src','selectseat.png');
+      $(this).attr('src','images/selectseat.png');
   });
 
 //slide down/up panel from codeAcademy
