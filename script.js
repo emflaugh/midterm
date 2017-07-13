@@ -56,12 +56,13 @@ $('.selected').on('click', function(){
 
 	//$("form").hide();
 	$(".available").on("click", function() {
-		console.log('hello');
 		$("form").toggleClass('is-active');
-		//$("form").show();
-		// selectedSeat = $(this);
-		// seatNumber = $(this).attr("id");
-		// $(".yourSeat").text("seat #" + seatNumber + ":");
+
+
+    
+		selectedSeat = $(this);
+		seatNumber = $(this).attr("id");
+		$(".yourSeat").text("seat #" + seatNumber + ":");
 
 	});
 

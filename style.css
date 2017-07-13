@@ -90,3 +90,12 @@ h4 {
   top: 0;
   left: 0;
 }
+
+
+/*This is a CSS style for our form*/
+form{
+  display: none;
+}
+form.is-active{
+  display: block;
+}
