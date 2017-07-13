@@ -12,7 +12,7 @@ $(function() {
 	//$("form").hide();
 	$(".available").on("click", function() {
 		console.log('hello');
-		$("form").toggleClass('is-active');
+		$("form").addClass('is-active');
 		//$("form").show();
 		// selectedSeat = $(this);
 		// seatNumber = $(this).attr("id");
