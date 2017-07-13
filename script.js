@@ -29,15 +29,18 @@ console.log('hi');
 // // } else if ((this).html() == "<img src="images/selectseat.png" class="open-seat" style="width:100%" alt="Image">") {
 // // } $(this).html("<img src='images/openseat.png' class='open-seat' style='width:100%'' alt='Image'>");
 
-$('item').click(function(){
-  $(this).toggleClass('is-active')
-});
-  
 
+$('.seat').click(function(){
+  $(this).toggleClass('is-active');
+});
 
 $('.available').on('click', function(){
   $(this).toggleClass('selected').toggleClass('available');
 });
+$('.selected').on('click', function(){
+  $(this).toggleClass('selected').toggleClass('available');
+});
+
 // $('.reserved').on('click', function(){
 //   $(this).toggleClass('available').toggleClass('reserved');
 //   $('.available').html("<div class='col-sm-2'><img src='images/openseat.png'></div>");
