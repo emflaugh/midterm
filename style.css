@@ -1,38 +1,28 @@
 .jumbotron {
-  /*background-image: url('https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX6513421.jpg');*/
   background-image: url('http://www.jeffanderin.us//images/CinemaBackground.jpg');
-  /*color: #c61515;*/
   color: white;
   text-align: center;
   background-position: 0% 30%;
   background-size: cover;
   background-repeat: no-repeat;
-  /*font-family: 'Nosifer', cursive;*/
 }
-
-/*ol {
-  background-color: white;
-  text-align: left;
-  position: fixed;
-  margin-left: 50%;
-  margin-right: 50%;
-  color: black;
-  z-index: 1;
-}*/
 
 .popcorn {
   height: 300px;
 }
 
 body {
-  /*background-image: url('http://www.gunsandammo.com/files/2011/09/theatre1.jpg');*/
   background-color: black;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
 }
 
 .row {
   padding: 15px;
-  /*border: 3px solid black;*/
-  background-color: white;
+  background-color: black;
 }
 
 .col-xs-2 {
@@ -54,29 +44,28 @@ h4 {
   text-align: center;
 }
 
-.form-container {
-  display: none;
-  margin: 0, auto;
-  background-color: lightgrey;
-  width: 25%;
-  border-radius: 10px;
-  padding: 10px;
-}
 
+/* CSS for Seats on click*/
+.available.is-active, .selected.is-active, .reserved.is-active {
+  z-index: 10000;
+}
 .wrapper {
-  position: relative
+  position: relative;
+  display: inline-block;
+  height: 150px;
+  width: 10%;
+  float: left;
 }
 .seat {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
 }
 .available {
   z-index: 100;
   position: absolute;
 }
-
-
 .selected {
   position: absolute;
   top: 0;
@@ -90,13 +79,9 @@ h4 {
 
 
 /*This is a CSS style for our form*/
-form{
+form {
   display: none;
 }
-form.is-active{
+form.is-active {
   display: block;
 }
-
- .available.is-active, .selected.is-active, .reserved.is-active {
-   z-index: 10000;
- }
