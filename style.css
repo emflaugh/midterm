@@ -75,17 +75,14 @@ h4 {
   z-index: 100;
   position: absolute;
 }
-.seat .is-active {
-  z-index: 1000;
-}
+
+
 .selected {
-  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
 }
 .reserved {
-  z-index: 1;
   position: absolute;
   top: 0;
   left: 0;
@@ -99,3 +96,7 @@ form{
 form.is-active{
   display: block;
 }
+
+ .available.is-active, .selected.is-active, .reserved.is-active {
+   z-index: 10000;
+ }
