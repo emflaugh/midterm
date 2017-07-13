@@ -3,9 +3,6 @@ $('.seat').on('click', function(){
   $('.selected').toggleClass('is-active');
 });
 
-$(function() {
-
-
 	var seatNumber;
 	var selectedSeat;
 
@@ -28,6 +25,8 @@ $(function() {
        reservation.phone = $("#phone_number").val();
        reservation.email = $("#email").val();
        reservation.yourSeat = $('.selected.is-active').attr('id');
+       $('.selected').removeClass('is-active');
+         $('.reserved').addClass('is-active');
        // reservation.yourSeat = $(".yourSeat").text();
 console.log(reservation);;
 
@@ -39,9 +38,5 @@ console.log(reservation);;
     //
 		// $("#reservedSeat").text("seat #" + seatNumber + " " + reservation.name);
 	});
-
-});
-
-
 
 });
