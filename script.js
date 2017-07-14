@@ -26,7 +26,7 @@ $('.wrapper').on('click', function(){
 		// $(".yourSeat").text("seat #" + seatNumber + ":");
 
 	});
-
+var users = [];
 	var reservation = {
 
 	};
@@ -37,9 +37,14 @@ $('.wrapper').on('click', function(){
        reservation.name = $("#name").val();
        reservation.phone = $("#phone_number").val();
        reservation.email = $("#email").val();
-       reservation.yourSeat = $('.wrapper').attr('id');
+       reservation.yourSeat = $('.beenClicked').attr('id');
        $('.beenClicked').html('<div><img src="images/takenseat.png" class="unavailable"></div');
+       $('.wrapper').removeClass('beenClicked');
+       users.push(reservation);
+      //  $('.beenClicked').html('<div><img src="images/takenseat.png" class="unavailable"></div');
 
+console.log(reservation.yourSeat);
+console.log(users);
       //  $('.wrapper').find('is-active');
       //    $('.selected').removeClass('is-active');
        //
