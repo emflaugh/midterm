@@ -26,7 +26,10 @@ $('.wrapper').on('click', function(){
 
 	});
 
-	var reservation = {
+
+var users = [];
+
+  var reservation = {
 
 	};
 $('.wrapper').on('click', function(){
@@ -38,6 +41,9 @@ $('.wrapper').on('click', function(){
        reservation.email = $("#email").val();
        reservation.yourSeat = $('.wrapper').attr('id');
        $('.beenClicked').html('<div><img src="images/takenseat.png" class="unavailable"></div');
+       users.push(reservation);
+       console.log(users);
+
 
       //  $('.wrapper').find('is-active');
       //    $('.selected').removeClass('is-active');
