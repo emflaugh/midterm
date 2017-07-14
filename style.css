@@ -74,6 +74,14 @@ h4 {
   top: 0;
   left: 0;
 }
+.unavailable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
 
 .seatid {
   z-index: 100000000;
