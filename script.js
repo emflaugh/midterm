@@ -30,18 +30,20 @@ $('.wrapper').on('click', function(){
 	var reservation = {
 
 	};
-
+$('.wrapper').on('click', function(){
+  $(this).toggleClass('beenClicked');
+});
   $("#button").on("click", function() {
        reservation.name = $("#name").val();
        reservation.phone = $("#phone_number").val();
        reservation.email = $("#email").val();
-       reservation.yourSeat = $('.selected.is-active').attr('id');
+       reservation.yourSeat = $('.wrapper').attr('id');
+       $('.beenClicked').html('<div><img src="images/takenseat.png" class="unavailable"></div');
 
-       $('.wrapper').find('is-active');
-         $('.selected').removeClass('is-active');
-
-       $('.wrapper').on('click', function(){
-         $(this).find('.reserved').addClass('is-active');
+      //  $('.wrapper').find('is-active');
+      //    $('.selected').removeClass('is-active');
+       //
+      //    $(this).find('.reserved').addClass('is-active');
 
 });
         //  $(this).find('.reserved').addClass('is-active');
@@ -62,23 +64,23 @@ console.log(reservation);
 		// 	.html("<p id = 'reservedSeat'></p>");
     //
 		// $("#reservedSeat").text("seat #" + seatNumber + " " + reservation.name);
-	});
+	// });
 
-var name;
-
-$('.seat').mouseover(function(){
-  if ($(this).hasClass('reserved')) {
-     name = $(this).attr('#name');
-     $(this).children('p').text('#name');
-  }
-});
-
-//return to reserved when mouse out
-$('.seat').mouseout(function() {
-  if ( $(this).hasClass('reserved') ) {
-    $(this).children('p').text('Reserved');
-  }
-});
+// var name;
+//
+// $('.seat').mouseover(function(){
+//   if ($(this).hasClass('reserved')) {
+//      name = $(this).attr('#name');
+//      $(this).children('p').text('#name');
+//   }
+// });
+//
+// //return to reserved when mouse out
+// $('.seat').mouseout(function() {
+//   if ( $(this).hasClass('reserved') ) {
+//     $(this).children('p').text('Reserved');
+//   }
+// });
 
 
 
