@@ -100,3 +100,16 @@ form.is-active{
  .available.is-active, .selected.is-active, .reserved.is-active {
    z-index: 10000;
  }
+
+ .box {
+    float:left;
+    width:100px;
+    height:100px;
+    margin-right:5px;
+    margin-bottom:5px;
+    background-color:#0000FF;
+}
+.open-seat{
+  width: 100%;
+  height: 100%;
+}
