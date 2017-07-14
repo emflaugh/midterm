@@ -1,10 +1,12 @@
 .jumbotron {
   background-image: url('http://www.jeffanderin.us//images/CinemaBackground.jpg');
   color: white;
+  font-family: showtime;
   text-align: center;
-  background-position: 0% 30%;
+  background-position: 0% 20%;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 300px;
 }
 
 .popcorn {
@@ -35,10 +37,6 @@ body {
   margin-bottom: 100px;
 }
 
-.thumbnail {
-  padding-top: 40px;
-  background-color: lightgrey;
-}
 
 h4 {
   text-align: center;
@@ -77,11 +75,78 @@ h4 {
   left: 0;
 }
 
+.seatid {
+  z-index: 100000000;
+  height: 1000px;
+  width: 100px;
+  color: white;
+}
 
-/*This is a CSS style for our form*/
+/*This is CSS styling or our Guide thumbnails*/
+.thumbnail {
+  padding-top: 40px;
+  background-color: lightgrey;
+  border: none;
+}
+.row-guide {
+  padding-top: 10px;
+  background-color: lightgrey;
+  width: 40%;
+  height: 310px;
+  color: black;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+fieldset {
+  width: 50%;
+  border-radius: 5px;
+  border: 2px, solid, white;
+}
+
+
+/*This CSS styling for our form*/
 form {
   display: none;
 }
 form.is-active {
   display: block;
+}
+.reservationForm {
+  padding-bottom: 20px;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  width: 50%;
+}
+.form-group {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.form-head {
+  text-align: center;
+}
+.form-wrapper {
+  background-color: white;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  width: 50%;
+}
+#button{
+  background-color: #0cad3f;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+.centerButton {
+  text-align: center;
+  padding-bottom: 100px;
+}
+#button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
