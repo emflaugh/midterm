@@ -44,7 +44,7 @@ $('.wrapper').mouseenter(function(){
   var name = $(this).data('name');
   seat = $(this).data('yourSeat');
   console.log(name + " "+ seat);
-  $('#' + seat).html('<span class="hoverInfo">' + name + ' has reserved this seat</span>');
+  $('#' + seat).html('<span class="hoverInfo">Name:' + name + ' Seat: '+ seat + '</span>');
   // $(this).append(name + ' ' + seat);
 }).mouseleave(function() {
   $('#' + seat).html('<div><img src="images/takenseat.png" class="unavailable"></div');
