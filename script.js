@@ -16,6 +16,8 @@ $('.wrapper').on('click', function(){
 
 	});
 
+
+// On click of button creates object information 
 	var reservation = {
 
 	};
@@ -30,6 +32,7 @@ $('.wrapper').on('click', function(){
        $('.beenClicked').html('<div><img src="images/takenseat.png" class="unavailable"></div');
        $('.beenClicked').data(reservation);
         // console.log($('.beenClicked').data());
+        $('input').val("");
        $('.wrapper').removeClass('beenClicked');
 
 
@@ -44,7 +47,7 @@ $('.wrapper').mouseenter(function(){
   var name = $(this).data('name');
   seat = $(this).data('yourSeat');
   console.log(name + " "+ seat);
-  $('#' + seat).html('<span class="hoverInfo">Name:' + name + ' Seat: '+ seat + '</span>');
+  $('#' + seat).html('<span class="hoverInfo"> Reserved for: ' + name + ' </span>');
   // $(this).append(name + ' ' + seat);
 }).mouseleave(function() {
   $('#' + seat).html('<div><img src="images/takenseat.png" class="unavailable"></div');
